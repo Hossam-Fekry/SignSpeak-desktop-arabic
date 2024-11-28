@@ -1,0 +1,12 @@
+TODO:
+    1.add the sound
+    2.add new signs
+    3.make arabic version
+    4.make a mobile version
+
+
+FIXME:
+    1.fix the colors and make it good for eyes
+    2.fix the title text
+    3.delete the video button & function
+    4.Change buttons place
