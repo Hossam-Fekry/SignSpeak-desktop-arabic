@@ -120,7 +120,7 @@ Button(win, text='خروج', padx=95, bg='#2C3E50', fg='white', relief=RAISED, w
 
 #make the school Logo
 school_logo = PhotoImage(file="school logo.png")
-school_logo_l = Label(root, image = school_logo)
+school_logo_l = Label(win, image = school_logo)
 school_logo_l.place(x = width-700,y = 300)
 
 win.mainloop()
