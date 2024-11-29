@@ -118,4 +118,9 @@ status.place(x=400, y=650)
 Button(win, text='ابدا مباشره', padx=95, bg='#2C3E50', fg='white', relief=RAISED, width=1, bd=5, font=('Helvatica', 12, 'bold'), command=live).place(x=width-250, y=450)
 Button(win, text='خروج', padx=95, bg='#2C3E50', fg='white', relief=RAISED, width=1, bd=5, font=('Helvatica', 12, 'bold'), command=lambda: win.destroy()).place(x=650, y=700)
 
+#make the school Logo
+school_logo = PhotoImage(file="school logo.png")
+school_logo_l = Label(root, image = school_logo)
+school_logo_l.place(x = width-700,y = 300)
+
 win.mainloop()
