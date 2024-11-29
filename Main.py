@@ -107,7 +107,21 @@ def live():
 
     win.after(1, live)
 
+def about():
+    about = Tk()
+    about.title("About the developer")
+    about.geometry("300x100")
+    
+    name_label = Label(about, text="الاسم: حسام مصطفي فكري", font=('Helvatica', 12, 'bold'))
+    name_label.pack()
 
+    prim_label = Label(about, text="الصف: 6", font=('Helvatica', 12, 'bold'))
+    prim_label.pack()
+
+    school_label = Label(about, text="المدرسه: العهد الحديث الخاصه", font=('Helvatica', 12, 'bold'))
+    school_label.pack()
+
+    about.mainloop()
 
 # Create labels for status and buttons
 
@@ -116,6 +130,7 @@ status.place(x=400, y=650)
 
 # Buttons
 Button(win, text='ابدا مباشره', padx=95, bg='#2C3E50', fg='white', relief=RAISED, width=1, bd=5, font=('Helvatica', 12, 'bold'), command=live).place(x=width-250, y=450)
+Button(win, text='عن المطور', padx=95, bg='#2C3E50', fg='white', relief=RAISED, width=1, bd=5, font=('Helvatica', 12, 'bold'), command=about).place(x=width-250, y=500)
 Button(win, text='خروج', padx=95, bg='#2C3E50', fg='white', relief=RAISED, width=1, bd=5, font=('Helvatica', 12, 'bold'), command=lambda: win.destroy()).place(x=650, y=700)
 
 #make the school Logo
